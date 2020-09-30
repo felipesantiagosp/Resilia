@@ -1,0 +1,58 @@
+<meta charset="UTF-8">
+
+<script>
+    function pularLinha(){
+        document.write("<br>")
+        document.write("<br>")
+    }
+
+    function mostra(texto){
+        document.write(texto)
+        pularLinha()
+    }
+    
+    var quest = 15;
+
+    mostra("Eu acertei: ");
+
+    mostra(" ", quest,  " questões");
+
+    var n = 1; 
+
+
+    mostra( " O resultado da fórmula é : " + n * (10 / 20)  );
+
+
+    var idadeJ = 30;
+
+    var idadeF = 25;
+
+    var idadeG = 29;
+
+    var med = (idadeJ + idadeG + idadeF)/3;
+
+    mostra( ' Média das idades: ', Math.round(med))
+
+    var idadeL = 12;
+
+    var idadeGua = 15;
+
+    var idadeP = 13;
+
+    var med2 = (idadeL + idadeGua + idadeP)/3;
+
+
+    mostra(Math.round(med2));
+
+    var eu = 24;
+    var irmao = 21; 
+    var dif = eu - irmao
+
+    mostra("A diferença de idade entre nós é de " + dif + " anos.")
+
+    var diferençaDeAnos = 2020 - 1500
+    var filhosObtidos = diferençaDeAnos/28
+
+    mostra ( Math.round(filhosObtidos))
+
+</script>

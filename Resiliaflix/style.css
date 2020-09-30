@@ -1,0 +1,147 @@
+body{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+header{
+    background-color: #2f2e2e;
+    height: 50px;
+    box-shadow: 0px 0px 4px black;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+
+  
+
+}
+.espaco{
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+
+
+}
+.logoresiliaflix{
+    color: yellow;
+    font-size: 30px;
+    
+}
+.itemnavegador{
+    display: flex;
+    border-radius: 5px;
+    
+}
+.item{
+    background-color: yellow;
+    margin-left: 15px;
+    border-radius: 5px;
+    padding: 5px;
+    text-decoration: none;
+    color: #2f2e2e;
+    transition: 0.5s;
+}
+.item:hover{
+    background-color: #2f2e2e;
+    color: yellow;
+}
+
+main{
+
+}
+
+.img-filmes{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-left: 100px;
+    padding-top: 100px;
+    
+    
+    
+}
+.img-filmes img{
+    width: 182px;
+    height: 267px;
+    padding-right: 20px;
+    padding-top: 10px;
+    
+}
+.img-filmes img:hover{
+    transform: scale(1.15);
+    box-shadow: 5px black;
+
+}
+
+footer{
+    background-color: #2f2e2e;
+    height: 50px;
+    margin-bottom: 0px;
+    width: 100%;
+    position: fixed;
+    bottom:0;
+    left:0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+footer p{
+    padding: 30px;
+    display: inline;
+    width: 20%;
+}
+.imagens{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 3px;
+}
+footer a{
+    padding-left: 5%;
+    padding-right: 15px;
+
+}
+
+footer img:hover{
+    transform: scale(1.15);
+}
+@media(max-width: 768px){
+    header{
+        width: 100%;
+
+    }
+    .espaco{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .itemnavegador{
+        display: flex;
+        flex-direction: column;
+        justify-content: initial;
+        padding-top: 2px;
+        width: 100%;
+    }
+    .item{
+        width: 100%;
+        margin-left: 0px;
+        border-radius: 0px;
+        background-color: ivory;
+        border: 0.2px  solid black;
+        border-radius: 5px;
+        text-align: center;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+    .img-filmes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 170px;
+        padding-left: 50px;
+        padding-bottom:110px ;
+    }
+    * {
+        margin: 0 auto; 
+    }
+}
