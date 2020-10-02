@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function pularLinha(){
+            document.write("<br>");
+            document.write("<br>");
+        }
+
+        function mostra(texto){
+            document.write(texto);
+            pularLinha();
+        }
+
+        var vitorias = parseInt(prompt("Entre com o número de vitórias:"));
+
+        var empates = parseInt(prompt("Entre com o número de empates: ")); //função parseInt() converte o numero para Intenger
+
+        var pontosAnoAnterior = parseInt(prompt("Entre com a pontuação do ano anterior: "));
+        
+        var pontuação = (vitorias*3) + empates; 
+
+        mostra(pontuação);
+
+        if (pontuação > pontosAnoAnterior){
+            mostra("Seu time está melhor que no ano passado!");
+        }
+        
+        if (pontuação < pontosAnoAnterior){
+            mostra("Seu time está pior que no ano passado =(");
+        }
+
+        if (pontuação == pontosAnoAnterior){
+            mostra("Tá a mesma coisa");
+        }
+
+    </script>
+</body>
+</html>

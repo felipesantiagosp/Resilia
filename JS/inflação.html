@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function inflacao( preco1, preco2){
+        var inflacao = preco2 - preco1;
+        return inflacao;
+        }
+
+    
+
+        var inflacaoTomate = inflacao(3.30, 4.70);
+
+        var inflacaoArroz = inflacao (2.99, 3.25);
+
+        var inflacaoCenoura = inflacao(3.99, 4.14);
+
+        var media = (inflacaoArroz + inflacaoCenoura + inflacaoTomate)/3;
+
+        var estimativaTomate = inflacaoTomate/6;
+
+        var estimativaArroz = inflacaoArroz/6;
+
+        var estimativaCenoura = inflacaoCenoura/6;
+
+        document.write("A inflação média é " + media + "<br><br>");
+        
+        document.write("A inflação diária dos produtos Arroz, Cenoura e Tomate é, respectivamente : " + estimativaArroz + ", " + estimativaCenoura + ", " + estimativaTomate);
+    </script>
+</body>
+</html>

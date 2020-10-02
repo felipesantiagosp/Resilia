@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         function pularLinha(){
+            document.write("<br>");
+            document.write("<br>");
+        }
+
+        function mostra(texto){
+            document.write(texto);
+            pularLinha();
+        }
+
+        function saudacoes(nome){
+           return "Olá " + nome + "<br> <br>" + "Tudo bem " + nome + "?"
+        }
+
+        mostra(saudacoes("felipe"))
+
+    </script>
+</body>
+</html>

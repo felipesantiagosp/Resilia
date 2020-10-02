@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function pularLinha(){
+            document.write("<br>");
+            document.write("<br>");
+        }
+
+        function mostra(texto){
+            document.write(texto);
+            pularLinha();
+        }
+
+        function motorista(idadePessoa, idadeDirigir){
+            if (idadePessoa<idadeDirigir){
+
+              return mostra("Não pode dirigir!");
+
+            } else {
+
+                return mostra("Pode dirigir!");
+            }
+        }
+
+        motorista(19, 19);
+        
+    </script>
+</body>
+</html>

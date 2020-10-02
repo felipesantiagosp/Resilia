@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function pularLinha(){
+            document.write("<br>");
+            document.write("<br>");
+        }
+
+        function mostra(texto){
+            document.write(texto);
+            pularLinha();
+        }
+
+        function bebida (){
+           return document.write(
+                "1- Refrigerante <br> 2- Água <br> 3- Suco"
+            );
+        }
+
+
+        var bebidaEscolhida = prompt("Digite o número da bebida: \n 1- Refrigerante \n 2- Água \n 3- Suco  ");
+
+        if (bebidaEscolhida == "1"){
+            mostra("Refrigerante")
+        } else if (bebidaEscolhida == "2"){
+            mostra("Água")
+        } else if (bebidaEscolhida == "3"){
+            mostra("Suco")
+        }
+
+        
+    </script>
+</body>
+</html>

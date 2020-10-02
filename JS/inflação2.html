@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function inflacao( preco1, preco2){
+        var inflacao = preco2 - preco1;
+        return inflacao;
+        }
+ 
+        var produto = prompt('Indique o produto');
+
+        var preco1 = prompt ("Indique o preço anterior");
+
+        var preco2 = prompt ("Indique o preço atual");
+
+        var inflacao2 = inflacao(preco1, preco2);
+
+        document.write("A inflação média é " + inflacao2);
+
+
+    </script>
+</body>
+</html>
