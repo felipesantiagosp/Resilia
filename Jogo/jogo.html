@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <script>
+        function escreva(frase){
+           return document.write(frase);
+        }
+
+        function escolha(){
+            var escolha = parseInt(prompt("Escolha 1 ou 2"));
+            if (escolha == 1){
+                window.location.href = "jogo1.html";
+
+            } else if (escolha == 2){
+                window.location.href = "jogo1.html";
+
+            }
+            return escolha;
+        }
+
+        escreva('<div class:"letras"><h1> Bem vindos ao submundo</h1> <br><p>Você não lembra muito bem da noite anterior, porém você acordou nesse lugar estranho, não sabe ao certo onde está e só tem duas opções a seguir, são duas portas, uma azul e outra vermelha, você não sabe nada sobre o que tem atrás delas, você terá de escolher pela afinidade que possui por cada uma delas.</p> <br> <strong><p style="color: darkmagenta;">Porta vermelha (1) ou Porta azul (2) ?</p></strong>');
+
+        
+
+    </script>
+    
+    <button onclick="escolha()">Escolha!</button>
+</body>
+</html>
