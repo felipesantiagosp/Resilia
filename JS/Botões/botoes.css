@@ -1,0 +1,60 @@
+#corpo{
+    background: black;
+    height:100%; 
+    width:100%;
+}
+#cabeca{
+
+    width: 100%;
+    height: 150px;
+    background: blanchedalmond;
+    display: flex;
+    justify-content: center;
+}
+header img{
+    padding-top: 10px;
+}
+#comecar{
+width: 150px;
+height: 50px;
+margin-top: 50px;
+background-color: black;
+border: solid thin blanchedalmond;
+color: blanchedalmond;
+}
+#comandante{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    width: auto;
+    height: 800px;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    margin: auto;
+    padding: 30px;
+
+}
+
+#comandante button{
+    text-align: center;
+    color: black;
+    background-color:blanchedalmond;
+    width: 147.14px;
+    height: 30px;
+    border: solid thin ;
+}
+
+footer{
+    display: flex;
+    width: 100%;
+    background: fixed blanchedalmond;
+    height: 30px;
+    justify-content: left;
+}
+
+footer p{
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}

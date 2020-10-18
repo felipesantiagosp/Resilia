@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="botoes.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+<body id="corpo">
+        <header id="cabeca">
+            <button type="button" id="comecar" onclick="botoes()">Aperta ai pra começar</button> 
+          
+        </header>
+        <main>
+            <div id="comandante"> </div>
+
+            <script>
+
+                function botoes(){
+
+
+                    for (var i = 0; i<20; i++){
+
+
+                        var divNova = document.getElementById("comandante");
+
+                        var botaum = document.createElement("button");
+
+                        var text = document.createTextNode("Botão " + i);
+
+                        var botaumAntigo = document.querySelector("#comecar");
+
+                        var cabeca = document.querySelector("#cabeca")
+
+                        
+
+                        divNova.appendChild(botaum);
+
+                        botaum.appendChild(text);
+
+                        
+					}
+					cabeca.removeChild (botaumAntigo)
+					show_image("botao.png", 120, 120, "Um botão") 
+					
+					
+					
+                }
+				function show_image(src, width, height, alt) {
+
+					
+					var img = document.createElement("img");
+					img.src = src;
+					img.width = width;
+					img.height = height;
+					img.alt = alt;
+					cabeca.appendChild(img);
+					
+
+				}
+
+            </script>
+        </main>
+        <footer>
+            <p>Resilliabutton &#169; </p>
+        </footer>
+</body>
+</html>
