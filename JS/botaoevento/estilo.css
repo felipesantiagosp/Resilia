@@ -1,0 +1,22 @@
+body{
+    background: #111111 ;
+}
+.estilo{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.botao{
+    background: #000000;
+    color: #ccff33;
+    border: none;
+    align-items: center;    
+    margin-top: 20%;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: medium;
+    font-family: 'Staatliches', cursive;
+
+}
